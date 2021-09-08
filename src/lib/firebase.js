@@ -1,26 +1,27 @@
 import Firebase from 'firebase/compat/app';
 import 'firebase/compat/firestore';
 import 'firebase/compat/auth';
+// import { getAnalytics } from "firebase/analytics";
 
 // We want to import the seed files
-import { seedDatabase } from '../seed';
+// import { seedDatabase } from '../seed';
 
 
 const config = {
-    apiKey: "AIzaSyDib3WMphQfiZqxz2LCfcvV-jqy0Ym4XdY",
-    authDomain: "instagram-83c2f.firebaseapp.com",
-    projectId: "instagram-83c2f",
-    storageBucket: "instagram-83c2f.appspot.com",
-    messagingSenderId: "831626873993",
-    appId: "1:831626873993:web:696df48bdeb03d55cf0a58",
-    measurementId: "G-Q857EL02J8"
+    apiKey: "AIzaSyAjVvHD47eXaqLBF9s_bXCFAONtHhKH1Y8",
+    authDomain: "instagram-3740d.firebaseapp.com",
+    projectId: "instagram-3740d",
+    storageBucket: "instagram-3740d.appspot.com",
+    messagingSenderId: "920342165105",
+    appId: "1:920342165105:web:a1334dafeac1133e8b0dd0"
 };
 
 const firebase = Firebase.initializeApp(config);
 const { FieldValue } = Firebase.firestore;
+// const analytics = getAnalytics(app);
 
 // We will call the seed files here (only ONCE!)
-seedDatabase(firebase);
-console.log('firebase', firebase);
+// seedDatabase(firebase);
+// console.log('firebase', firebase);
 
 export { firebase, FieldValue };
